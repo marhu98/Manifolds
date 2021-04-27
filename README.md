@@ -5,6 +5,14 @@ It calculates:
 - Parallel transport equations
 - Metric coefficients
 
+## Latex
+
+It is also possible to get your result in latex, however
+to avoid messy logic with "\\" in python, 
+those have being replaced by "~Ñ".
+
+You will have to replace them afterwards in your tex document.
+
 
 ## Example
 
@@ -78,15 +86,7 @@ ddx1 + 0.5*dx2**2*sin(2*x1)
 ddx2 - 2.0*dx1*dx2*tan(x1) 
 ```
 
-## Latex
-
-It is also possible to get your result in latex, however
-to avoid messy logic with "\\" in python, 
-those have being replaced by "~Ñ".
-
-You will have to replace them afterwards in your tex document.
-
-
 ## TO-DO
--Add examples
--Add parallel equations solver (I actually have this somewhere)
+- Add examples
+- Add parallel equations solver (I actually have this somewhere)
+- Make it more modular: Separate classes into their own files
