@@ -16,6 +16,11 @@ You will have to replace them afterwards in your tex document.
 
 ## Example
 
+- Running the file lobatchevsky will give some plot of geodesic
+on the hyperbolic plane.
+
+- It is also possible to get the metric information of the hyperbolic plane.
+
 ```
 myLobat = Lobatchevsky()
 print(myLobat)
@@ -51,7 +56,11 @@ ddx1 - 2.0*dx1*dx2/x2
 (ddx2*x2 + 1.0*dx1**2 - 1.0*dx2**2)/x2 
 ```
 
-We can also calculate the symbols of a sphere:
+- We can do the same to a sphere. Currently dimensions 1, 2 and 3 are implemented.
+But arbitrary dimensions might be implemented in the future.
+Anyway, computation get very expensive very soon. For example, the inverse of a nxn matrix must be calculated
+which is an operation at best O(n^3).
+
 ```
 Sphere = S2(1)
 print(Sphere)
